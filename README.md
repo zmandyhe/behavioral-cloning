@@ -164,6 +164,7 @@ python3 drive.py model.h5 run1
 ```
 
 The foloder of 'run1' save all the frames during the autonomous driving which looks like as follows. The image file name is a timestamp of when the image was seen. This information is used by `video.py` to create a chronological video of the agent driving called run1.mp4.
+
 ![run1 image](https://github.com/zmandyhe/behavioral-cloning/blob/master/pic/run1-img-list.PNG)
 
 I then create a video based on images found in the above `run1` directory. The name of the video will be the name of the directory followed by `'.mp4'`, so, in this case the video will be `run1.mp4`.
