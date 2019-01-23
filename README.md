@@ -93,6 +93,7 @@ valid_generator = data_generator(X_valid_img_paths,y_valid,batch_size=batch_size
 In this project, I followed Nvidia's paper of [End to End Learning for Self-Driving Cars](https://arxiv.org/abs/1604.07316) CNN architecutre. The network consists of 9 layers, including a normalization layer using Keras's [lambda layers](https://keras.io/layers/core/#lambda) to create arbitrary functions that operate on each image as it passes through each layer. The lambda layer will also ensure that the model will normalize the input images when making predictions in drive.py. I used the RGB format for the input image with the size of (66,200,3).
 
 **The Model Architecture and Definition**
+
 ![CNN Architecture](https://github.com/zmandyhe/behavioral-cloning/blob/master/pic/nvidia-cnn.png)
 ```
 def model(loss='mse', optimizer='adam'):
